@@ -1,0 +1,20 @@
+{
+  "name": "crypto-price",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "deploy": "git add . && git commit -m Heroku && git push heroku master"
+  },
+  "keywords": [],
+  "author": "Dinura Imesh",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.25.0",
+    "cheerio": "^1.0.0-rc.10",
+    "express": "^4.17.2",
+    "node-cron": "^3.0.0"
+  }
+}
