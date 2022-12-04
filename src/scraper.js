@@ -12,7 +12,7 @@ const Scraper = {
         .get(URL, { headers: { "User-Agent": "" } })
         .catch((e) => console.log(e.message));
       const $ = cheerio.load(response.data);
-      $("table.views-table>tbody>tr").each(function (i, elm) {
+      $("table.cols-8>tbody>tr").each(function (i, elm) {
         const text = $(this).text();
         const replaced = text.replace(/(\r\n|\n|\r)/gm, "|");
         const prepared = Utils.prepareData(replaced.split(" ").join("")).split(
